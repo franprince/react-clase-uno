@@ -1,3 +1,12 @@
-import Tarjeta from './components/Tarjeta.js';
+import { BlogPost } from './components/Blogpost.js';
 
-ReactDOM.render(<Tarjeta nombre="Francisco Prince" imagen="https://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg" titulo="Jr. Developer"/>, document.getElementById('react-app'));
+ReactDOM.render(
+    <BlogPost
+        titulo="Capitalismo Strikes Again"
+        parrafos="Hoy me compré una campera, /n estaba en oferta por cierre del local. /n Creo que necesito una pecera."
+        autor={{
+            nombre: "Francisco Prince",
+            titulo: "Developer Wannabe",
+            imagen: "https://nic.ar/sites/default/files/logo-nic_0.png"
+        }} />,
+    document.getElementById('react-app'));
