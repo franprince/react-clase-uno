@@ -1,10 +1,13 @@
 import { Checkbox } from "./Checkbox.js";
 
 export function CheckboxList(props) {
-    console.log(props.items)
     return (
-        props.items.map(element => {
-            <Checkbox name={element.key} initialValue={ element.value } />
-        })
+        <ul>
+            {Object.entries(props.items).map((element, index) => 
+               <li key={ "li"+index }>
+                   <Checkbox key={ "check"+index } name={ element[0] } initialValue={ element[1] }/>
+             </li>
+        )}
+        </ul>
     )
 }
