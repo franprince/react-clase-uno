@@ -9,4 +9,4 @@ ReactDOM.render(
             titulo: "Developer Wannabe",
             imagen: "https://nic.ar/sites/default/files/logo-nic_0.png"
         }} />,
-    document.getElementById('react-app'));
+    document.getElementById('tarea-1'));
