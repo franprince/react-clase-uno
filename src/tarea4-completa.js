@@ -1,8 +1,8 @@
-import { CheckboxList } from './components/CheckboxList.js';
+import { CheckboxListWithState } from './components/CheckboxListWithState.js';
 
 //ReactDOM.render(<InputNombre nombre="Francisco" />, document.getElementById('react-app'));
 ReactDOM.render(
-<CheckboxList items={{
+<CheckboxListWithState items={{
     Carlos: true, 
     Armenio: false,
     Amelia: true

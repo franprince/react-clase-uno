@@ -12,6 +12,7 @@ export function Checkbox(props) {
                     setIsChecked(!isChecked);
                 }}
             />
+            <span><strong>Checked:</strong>{isChecked? "Si" : "No"}</span>
         </React.Fragment>
     )
 }
