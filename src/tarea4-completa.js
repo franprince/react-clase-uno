@@ -3,8 +3,8 @@ import { CheckboxListWithState } from './components/CheckboxListWithState.js';
 //ReactDOM.render(<InputNombre nombre="Francisco" />, document.getElementById('react-app'));
 ReactDOM.render(
 <CheckboxListWithState items={{
-    Carlos: true, 
-    Armenio: false,
+    'Juan Carlos': true, 
+    Rogelio: false,
     Amelia: true
 }}/>
-, document.getElementById('tarea-3'));
+, document.getElementById('tarea-4'));

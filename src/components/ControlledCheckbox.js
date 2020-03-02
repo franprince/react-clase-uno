@@ -16,7 +16,7 @@ export function ControlledCheckbox(props) {
                 checked={props.value}
                 className="input"
                 type="checkbox"
-                onChange={props.onChange()}
+                onChange= { props.onChange }
             />
         </React.Fragment>
     )
