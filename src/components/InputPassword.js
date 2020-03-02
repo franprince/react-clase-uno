@@ -1,15 +1,15 @@
 export function InputPassword(props) {
+    const [esValido, setEsValido] = React.useState(true);
     return (
         <input
-            className="input"
+            className={ esValido ? "input" : "input-match" }
             type="password"
             onChange={event => {
-                if(event.target.value.length < props.minlenght){
-                    event.target.classList.add("input-match");
-                }else{
-                    event.target.classList.remove("input-match");
-                }
-            }}
+                event.target.value.length < props.minlenght ?
+                setEsValido(false) :
+                setEsValido(true)
+            }
+            }
         />
     )
 }

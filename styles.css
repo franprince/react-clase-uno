@@ -73,6 +73,9 @@
 }
 
 .input-match {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
   background: lightcoral;
 }
 

@@ -1,14 +1,10 @@
 export function InputNombre(props) {
+    const [esValido, setEsValido] = React.useState(true);
     return (
         <input
-            className="input"
-            onChange={event => {
-                if(event.target.value === props.nombre){
-                    event.target.classList.add("input-match");
-                }else{
-                    event.target.classList.remove("input-match");
-                }
-            }}
+            className={esValido ? "input" : "input-match"}
+            onChange={event => { event.target.value === props.nombre ? setEsValido(true) : setEsValido(false) }
+            }
         />
     )
 }

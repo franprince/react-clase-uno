@@ -7,8 +7,7 @@ export function Checkbox(props) {
                 checked={isChecked}
                 className="input"
                 type="checkbox"
-                onChange={event => {
-                    event.target.checked = !event.target.checked;
+                onChange={() => {
                     setIsChecked(!isChecked);
                 }}
             />
