@@ -73,6 +73,9 @@
 }
 
 .input-match {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
   background: lightcoral;
 }
 
@@ -98,4 +101,8 @@
 .post-paragraph {
   max-width: 400px;
   font-size: 20px;
+}
+li{
+  display: block;
+  padding: 0.5rem;
 }

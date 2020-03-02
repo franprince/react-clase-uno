@@ -1,17 +1,15 @@
-function Tarjeta(props) {
+export function Tarjeta(props) {
     return (
-        <div class="tarjeta">
+        <div className="tarjeta">
             <img
                 src={props.imagen}
                 alt="Foto de perfil"
-                class="tarjeta-img"
+                className="tarjeta-img"
             />
-            <div class="tarjeta-data">
-                <header class="tarjeta-data-header">{props.nombre}</header>
+            <div className="tarjeta-data">
+                <header className="tarjeta-data-header">{props.nombre}</header>
                 <span>{props.titulo}</span>
             </div>
         </div>
     );
 }
-
-export default Tarjeta;
